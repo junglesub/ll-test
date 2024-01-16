@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="roll.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="reel">
+      <div class="text">
+        <div class="original"></div>
+      </div>
+    </div>
+
+    <script>
+      "김예지,김하영,임종현,최예라,박은주,심성환,이한나,장한성,한선규,김하은"
+        .split(",")
+        .map((name) => {
+          const element = document.createElement("div");
+          element.innerText = name;
+          document.querySelector(".original").appendChild(element);
+        });
+    </script>
+  </body>
+</html>

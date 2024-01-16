@@ -1,0 +1,23 @@
+html,
+body {
+  background-color: black;
+  color: white;
+}
+
+.reel {
+  font-size: 120px;
+  height: 184px;
+  line-height: 1;
+  overflow-y: hidden;
+  border: 1px solid white;
+}
+.text {
+  transform: translateY(0px);
+  /* transition: transform 3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+.original > div {
+  padding: 32px;
+  margin: 0;
+  text-align: center;
+}
